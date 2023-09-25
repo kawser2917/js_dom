@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practicing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .fruits-container li{
+            color: green;
+        }
+        #fruits-title{
+            color: black;
+        }
+        .important-places{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello Guys Win or win</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Leave thinking to die. Work hard and win</h1>
+            <ul>
+                <li>This is Kawser</li>
+                <li>I have lot of responsibility</li>
+                <li>Going to Hard work And wanna make a blast</li>
+                <li>Money is My top priority</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fuirts i like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="place">Place i like to vist</h1>
+            <ul>
+                <li class="important-places">Dilli Agra</li>
+                <li class="important-places">Sajek</li>
+                <li class="important-places">Kasmir</li>
+                <li>Switzerland</li>
+            </ul>
+        </section>
+     
+    </main>
+
+    <script src="js/dom.js"></script>
+    <script>
+        // getElementByTagName
+        const licollection = document.getElementsByTagName('li');
+        for(const li of licollection){
+            // console.log(li.innerText)
+        }
+      
+        const allHeading = document.getElementsByTagName('h1');
+        for(const h1 of allHeading){
+            // console.log(h1.innerText)
+        }
+        // getElementById
+        const fruitsTitle = document.getElementById("fruits-title")
+        fruitsTitle.innerText = "Title Changed by Javascript";
+
+        // getElementByClassName
+        const places = document.getElementsByClassName("important-places")
+        for(const place of places){
+            console.log(place.innerText)
+        }
+        // querySelector
+        // first element access
+        const singleLi = document.querySelector('.fruits-container li')
+        console.log(singleLi)
+
+        // getting all element
+        const someLi = document.querySelectorAll('.fruits-container li')
+        console.log(someLi)
+        for(const li of someLi){
+            console.log(li.innerText)
+        }
+
+ 
+ 
+    </script>
+</body>
+</html>
