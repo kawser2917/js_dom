@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Practicing</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        li{
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,5 +26,15 @@
     </main>
 
     <script src="js/dom.js"></script>
+    <script>
+        const licollection = document.getElementsByTagName('li');
+        for(const li of licollection){
+            console.log(li.innerText)
+        }
+        const allHeading = document.getElementsByTagName('h1');
+        for(const h1 of allHeading){
+            console.log(h1.innerText)
+        }
+    </script>
 </body>
 </html>
