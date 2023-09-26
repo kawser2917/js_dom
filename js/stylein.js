@@ -21,3 +21,20 @@ const li = document.createElement("li")
 li.innerText = "I have to Visit"
 
 placesUl.appendChild(li)
+
+// InnetHtml
+const mainContainer = document.getElementById("main-container")
+
+const sectionFood = document.createElement('section')
+
+sectionFood.innerHTML = `
+<h1>My Food List </h1>
+<ul> 
+<li> Fruits </li>
+<li> vegetables </li>
+<li> Fish </li>
+
+</ul>
+`
+
+mainContainer.appendChild(sectionFood)
