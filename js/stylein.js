@@ -14,3 +14,10 @@ places.classList.add("text-center")
 places.classList.add('text-large')
 places.classList.remove('text-large')
 // places.classList.remove("text-center")
+
+const placesUl = document.querySelector("#places-container ul")
+// placesUl.childNodes
+const li = document.createElement("li")
+li.innerText = "I have to Visit"
+
+placesUl.appendChild(li)
